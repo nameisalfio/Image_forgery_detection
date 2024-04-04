@@ -20,7 +20,7 @@ class MainWindow(QDialog):
     def open_image(self):
         # display original image
         self.fname = QFileDialog.getOpenFileName(
-            self, "Open file", "./data'", ("*.png, *.xmp *.jpg *.jpeg")
+            self, "Open file", "data/'", ("*.png, *.xmp *.jpg")
         )
         self.filename.setText(self.fname[0])
         pixmap = QPixmap(self.fname[0])
